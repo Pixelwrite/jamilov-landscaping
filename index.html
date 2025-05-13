@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jamilov Landscaping</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background-image: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+      position: relative;
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      font-size: 3rem;
+      font-family: 'Playfair Display', serif;
+      z-index: 1;
+    }
+
+    header p {
+      position: relative;
+      font-size: 1.2rem;
+      z-index: 1;
+      margin-top: 10px;
+    }
+
+    nav {
+      background-color: #2e7d32;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #c8e6c9;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #2e7d32;
+    }
+
+    footer {
+      background-color: #1b5e20;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .contact {
+      background-color: #e8f5e9;
+      border-radius: 10px;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .contact input, .contact textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contact button {
+      padding: 10px 20px;
+      background-color: #388e3c;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .contact button:hover {
+      background-color: #2e7d32;
+    }
+
+    .testimonials, .faq {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      padding: 30px;
+      margin-bottom: 40px;
+    }
+
+    .testimonial {
+      margin-bottom: 20px;
+      border-left: 4px solid #2e7d32;
+      padding-left: 15px;
+    }
+
+    .testimonial p {
+      font-style: italic;
+    }
+
+    .testimonial span {
+      display: block;
+      margin-top: 5px;
+      font-weight: bold;
+      color: #2e7d32;
+    }
+
+    .faq-item {
+      margin-bottom: 20px;
+    }
+
+    .faq-item h4 {
+      margin-bottom: 5px;
+      color: #2e7d32;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Jamilov Landscaping</h1>
+    <p>Premium Landscaping Services in the Seattle Area</p>
+  </header>
+
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="services">
+    <h2 style="text-align: center; margin-bottom: 30px;">Our Services</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Lawn Care</h3>
+        <p>Professional mowing, fertilization, and maintenance to keep your lawn lush and green.</p>
+      </div>
+      <div class="card">
+        <h3>Landscape Design</h3>
+        <p>Custom designs that bring your outdoor vision to life with beauty and function.</p>
+      </div>
+      <div class="card">
+        <h3>Hardscaping</h3>
+        <p>Expert installation of patios, walkways, retaining walls, and more.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 style="text-align: center; margin-bottom: 30px;">About Us</h2>
+    <p style="max-width: 800px; margin: auto; font-size: 1.1rem; text-align: center;">
+      Jamilov Landscaping is a trusted name in Seattle, offering professional landscaping services with a focus on sustainability, beauty, and long-term care. With over a decade of experience, our team is committed to transforming your outdoor spaces into serene, functional, and stunning environments.
+    </p>
+  </section>
+
+  <section id="testimonials">
+    <h2 style="text-align: center; margin-bottom: 30px;">What Our Clients Say</h2>
+    <div class="testimonials">
+      <div class="testimonial">
+        <p>"Jamilov Landscaping completely transformed our backyard. The team was professional, timely, and exceeded our expectations!"</p>
+        <span>- Sarah L., Seattle</span>
+      </div>
+      <div class="testimonial">
+        <p>"Their attention to detail and creativity is unmatched. Highly recommend to anyone looking to upgrade their outdoor space."</p>
+        <span>- Mark R., Bellevue</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <h2 style="text-align: center; margin-bottom: 30px;">Frequently Asked Questions</h2>
+    <div class="faq">
+      <div class="faq-item">
+        <h4>Do you offer free estimates?</h4>
+        <p>Yes, we offer free on-site consultations and estimates for all potential projects.</p>
+      </div>
+      <div class="faq-item">
+        <h4>What areas do you service?</h4>
+        <p>We proudly serve Seattle and surrounding areas including Bellevue, Redmond, and Kirkland.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Are your services eco-friendly?</h4>
+        <p>Absolutely. We prioritize sustainable landscaping practices and use eco-conscious materials whenever possible.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 style="text-align: center; margin-bottom: 30px;">Get in Touch</h2>
+    <div class="contact">
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Jamilov Landscaping | Seattle, WA | All Rights Reserved</p>
+  </footer>
+</body>
+
+</html>
